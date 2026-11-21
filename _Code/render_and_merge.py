@@ -103,7 +103,7 @@ def merge_and_assemble():
             "-c:v", "copy",
             "-c:a", "aac",
             "-b:a", "192k",
-            "-shortest",
+            "-t", f"{target_dur:.3f}",
             merged_path
         ]
         subprocess.run(cmd, capture_output=True, text=True)

@@ -23,8 +23,8 @@
 | **Frame Rate** | 30 fps | 30.00 fps | ✅ Compliant |
 | **Video Codec** | H.264 (AVC) | `h264` (Main / High profile, yuv420p) | ✅ Compliant |
 | **Audio Codec** | AAC (stereo, 192 kbps) | `aac`, 44.1 kHz, 192 kbps | ✅ Compliant |
-| **Target Duration** | 4:45 – 5:30 (< 7:00 strict max) | **~5:22** (322.7 seconds) | ✅ Compliant |
-| **File Size** | < 100 MB (GitHub direct push safe) | **~42 MB** | ✅ Compliant |
+| **Target Duration** | 4:45 – 5:30 (< 7:00 strict max) | **5:26** (326.2 seconds) | ✅ Compliant |
+| **File Size** | < 100 MB (GitHub direct push safe) | **14.93 MB** | ✅ Compliant |
 | **Visual Palette** | Row 1 Blue, Row 2 Green, Row 3 Orange, Pivots Yellow | Consistent throughout all 2D/3D scenes | ✅ Compliant |
 
 ---
