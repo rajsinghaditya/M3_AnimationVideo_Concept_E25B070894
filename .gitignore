@@ -1,0 +1,6 @@
+# Temporary render artifacts and caches
+media/
+__pycache__/
+*/__pycache__/
+.DS_Store
+*.incomplete

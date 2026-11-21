@@ -1,0 +1,125 @@
+NARRATION SCRIPT — Gaussian Elimination: Solving a 3×3 System
+==============================================================
+Student: Aditya Raj Singh | ID: e25b070894 | M3 Internal Assessment
+======================================================================
+
+SCENE 0 — Opening Frame (~5 seconds)
+--------------------------------------
+[No narration. Title card displayed for 5 seconds.]
+
+
+SCENE 1 — Hook (~30 seconds)
+------------------------------
+Imagine you have three equations with three unknowns — x, y, and z.
+You could try plugging in numbers at random, or substituting one equation into another.
+But with three equations, that quickly becomes messy and error-prone.
+What if there were a systematic method — an algorithm — that always works, no matter how complicated the system gets?
+There is. It's called Gaussian elimination, and that's exactly what we'll explore today.
+
+
+SCENE 2 — Concept Introduction (~50 seconds)
+----------------------------------------------
+Let's start with the basics.
+A system of linear equations can be written in matrix form as A x equals b,
+where A is the coefficient matrix, x is the vector of unknowns, and b is the vector of constants.
+We combine A and b into the augmented matrix, written with a vertical bar separating them.
+
+To solve the system, we use three elementary row operations.
+First, swapping two rows.
+Second, multiplying a row by a nonzero scalar.
+Third, adding a multiple of one row to another row — also called a row replacement.
+
+These operations transform the augmented matrix into row echelon form,
+where each leading entry — called a pivot — is to the right of the pivot above it,
+and all entries below each pivot are zero.
+
+Here is our learning objective:
+By the end of this video, the viewer will be able to explain how Gaussian elimination uses row operations to reduce a 3-by-3 system to row echelon form, why those operations do not change the solution set, and what the solution means geometrically.
+
+
+SCENE 3 — Visual Intuition (~50 seconds)
+------------------------------------------
+Now let's build some geometric intuition.
+Each linear equation in three variables represents a plane in three-dimensional space.
+Here we see three coloured planes — blue, green, and orange — corresponding to our three equations.
+The solution to the system is the single point where all three planes intersect.
+
+Notice that point. It's at x equals 1, y equals 2, z equals 3.
+
+When we perform a row operation — say, replacing Row 2 with Row 2 minus two times Row 1 — we're replacing one plane with a different plane.
+But here's the key insight: the new plane still passes through the same intersection point.
+So the solution set never changes. That's why row operations are safe — they preserve the solution.
+
+
+SCENE 4 — Worked Example (~100 seconds)
+-----------------------------------------
+Let's work through the full example. Our system is:
+x plus y plus z equals 6,
+2x plus 3y plus z equals 11,
+x plus 2y plus 3z equals 14.
+
+First, we write the augmented matrix.
+Row 1 is 1, 1, 1, bar, 6.
+Row 2 is 2, 3, 1, bar, 11.
+Row 3 is 1, 2, 3, bar, 14.
+
+The first pivot is the 1 in position Row 1, Column 1.
+
+Step one: eliminate the entry below the pivot in Row 2.
+We compute R2 minus 2 times R1.
+2 minus 2 is 0. 3 minus 2 is 1. 1 minus 2 is negative 1. 11 minus 12 is negative 1.
+So the new Row 2 is 0, 1, negative 1, bar, negative 1.
+
+Step two: eliminate the entry below the pivot in Row 3.
+We compute R3 minus R1.
+1 minus 1 is 0. 2 minus 1 is 1. 3 minus 1 is 2. 14 minus 6 is 8.
+So the new Row 3 is 0, 1, 2, bar, 8.
+
+Step three: eliminate the entry below the second pivot in Row 3.
+We compute R3 minus R2.
+0 minus 0 is 0. 1 minus 1 is 0. 2 minus negative 1 is 3. 8 minus negative 1 is 9.
+So the new Row 3 is 0, 0, 3, bar, 9.
+
+The matrix is now in row echelon form, with pivots at positions 1-1, 2-2, and 3-3.
+
+Now we back-substitute.
+From Row 3: 3z equals 9, so z equals 3.
+From Row 2: y minus z equals negative 1, so y equals negative 1 plus 3, which is 2.
+From Row 1: x plus y plus z equals 6, so x equals 6 minus 2 minus 3, which is 1.
+
+The solution is x equals 1, y equals 2, z equals 3.
+
+
+SCENE 5 — Interpretation (~40 seconds)
+----------------------------------------
+Let's verify our solution by substituting back into the original equations.
+Equation 1: 1 plus 2 plus 3 equals 6. Check!
+Equation 2: 2 times 1 plus 3 times 2 plus 3 equals 2 plus 6 plus 3 equals 11. Check!
+Equation 3: 1 plus 2 times 2 plus 3 times 3 equals 1 plus 4 plus 9 equals 14. Check!
+
+This confirms that the point (1, 2, 3) lies on all three planes — it is the unique intersection point.
+
+But not every system has a unique solution.
+If elimination produces a row like 0, 0, 0, bar, 5 — that's a contradiction. The system has no solution, and the planes don't all meet at a common point.
+If instead we get 0, 0, 0, bar, 0 — there may be infinitely many solutions, and the planes intersect along a line or overlap entirely.
+
+
+SCENE 6 — Summary and Credits (~30 seconds)
+----------------------------------------------
+Let's wrap up with three key takeaways.
+First: Gaussian elimination systematically reduces a system to row echelon form using elementary row operations.
+Second: Row operations are safe because they never change the solution set.
+Third: The solution has a geometric meaning — it's where all the planes intersect.
+
+Thank you for watching!
+
+[Credits displayed on screen:]
+References:
+  Gilbert Strang, "Introduction to Linear Algebra", 5th Edition.
+  David C. Lay, "Linear Algebra and Its Applications", 6th Edition.
+  Manim Community Edition Documentation.
+
+AI Disclosure:
+  Script, animation code, and narration were produced with the help of Claude (Anthropic).
+  Voice: edge-tts, en-GB-RyanNeural.
+  All mathematics was checked by the student.
