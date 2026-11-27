@@ -103,6 +103,17 @@ def generate_cloned_narration():
         for seg_id, text in segments:
             out_wav = os.path.join(CLONED_SEGMENTS_DIR, f"{scene_name}_{seg_id}.wav")
 
+            if os.path.exists(out_wav) and seg_id != "planes_intro":
+                res = subprocess.run([
+                    "ffprobe", "-v", "quiet", "-show_entries", "format=duration",
+                    "-of", "default=noprint_wrappers=1:nokey=1", out_wav
+                ], check=True, capture_output=True, text=True)
+                dur = float(res.stdout.strip())
+                segment_durations[scene_name][seg_id] = dur
+                seg_wavs.append(out_wav)
+                print(f"  Reusing {seg_id}: {dur:.2f}s")
+                continue
+
             if not text.strip():
                 # Scene 0: Title card 5s silence
                 cmd = [

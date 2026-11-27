@@ -47,7 +47,7 @@ SCENE_SEGMENTS = {
 
     "scene3": [
         ("planes_intro",
-         "Now let us build geometric intuition in three-dimensional space. Each linear equation in three variables defines a flat plane in 3D space. Here we see three colored planes: blue for equation one, green for equation two, and orange for equation three."),
+         "Now let us build geometric intuition in three-dimensional space. Each linear equation in three variables defines a flat plane in 3D space. Here we see three colored planes: blue for equation one, purple for equation two, and orange for equation three."),
         ("planes_intersection",
          "The solution to the system is the unique geometric point where all three planes simultaneously intersect: x equals 1, y equals 2, and z equals 3."),
         ("planes_invariance",

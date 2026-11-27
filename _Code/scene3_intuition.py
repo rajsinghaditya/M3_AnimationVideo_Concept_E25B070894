@@ -38,14 +38,14 @@ class Scene3_Intuition(ThreeDScene):
             stroke_width=0.5,
         ).set_color(BLUE)
 
-        # Plane 2: 2x + 3y + z = 11 => z = 11 - 2x - 3y (GREEN)
+        # Plane 2: 2x + 3y + z = 11 => z = 11 - 2x - 3y (PURPLE)
         plane2 = Surface(
             lambda u, v: axes.c2p(u, v, 11 - 2*u - 3*v),
             u_range=[0, 4], v_range=[0, 3],
             resolution=(8, 8),
             fill_opacity=0.3,
             stroke_width=0.5,
-        ).set_color(GREEN)
+        ).set_color(PURPLE)
 
         # Plane 3: x + 2y + 3z = 14 => z = (14 - x - 2y)/3 (ORANGE)
         plane3 = Surface(
@@ -57,7 +57,7 @@ class Scene3_Intuition(ThreeDScene):
         ).set_color(ORANGE)
 
         p1_label = MathTex(r"x+y+z=6", font_size=28, color=BLUE_C)
-        p2_label = MathTex(r"2x+3y+z=11", font_size=28, color=GREEN_C)
+        p2_label = MathTex(r"2x+3y+z=11", font_size=28, color=PURPLE_B)
         p3_label = MathTex(r"x+2y+3z=14", font_size=28, color=ORANGE)
         labels = VGroup(p1_label, p2_label, p3_label).arrange(DOWN, buff=0.2, aligned_edge=LEFT)
         labels.to_corner(UL, buff=0.5)
@@ -119,7 +119,7 @@ class Scene3_Intuition(ThreeDScene):
             resolution=(8, 8),
             fill_opacity=0.35,
             stroke_width=0.5,
-        ).set_color(GREEN)
+        ).set_color(PURPLE)
 
         self.play(Transform(plane2, plane2_new), run_time=2.5)
 
@@ -127,7 +127,7 @@ class Scene3_Intuition(ThreeDScene):
         self.play(sol_point.animate.set_color(RED).scale(1.5), run_time=0.6)
         self.play(sol_point.animate.set_color(YELLOW).scale(1/1.5), run_time=0.6)
 
-        safe_text = Text("Solution set never changes!", font_size=30, color=GREEN_C, weight=BOLD)
+        safe_text = Text("Solution set never changes!", font_size=30, color=YELLOW, weight=BOLD)
         safe_text.next_to(insight, UP, buff=0.3)
         self.add_fixed_in_frame_mobjects(safe_text)
         self.play(FadeIn(safe_text), run_time=0.8)

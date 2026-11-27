@@ -7,7 +7,7 @@ from manim import *
 import json, os
 
 ROW1_COLOR = BLUE_C
-ROW2_COLOR = GREEN_C
+ROW2_COLOR = PURPLE_B
 ROW3_COLOR = ORANGE
 PIVOT_COLOR = YELLOW
 
@@ -72,15 +72,15 @@ class Scene4_WorkedExample(Scene):
         t_start = self.time
         target_t = t_start + segs["worked_step1"]
 
-        step1_label = MathTex(r"R_2 \leftarrow R_2 - 2R_1", font_size=34, color=GREEN_C)
+        step1_label = MathTex(r"R_2 \leftarrow R_2 - 2R_1", font_size=34, color=PURPLE_B)
         step1_label.to_edge(RIGHT, buff=0.8).shift(UP * 1)
         self.play(Write(step1_label), run_time=0.8)
 
         arith1 = VGroup(
-            MathTex(r"2 - 2(1) = 0", font_size=28, color=GREEN_C),
-            MathTex(r"3 - 2(1) = 1", font_size=28, color=GREEN_C),
-            MathTex(r"1 - 2(1) = -1", font_size=28, color=GREEN_C),
-            MathTex(r"11 - 2(6) = -1", font_size=28, color=GREEN_C),
+            MathTex(r"2 - 2(1) = 0", font_size=28, color=PURPLE_B),
+            MathTex(r"3 - 2(1) = 1", font_size=28, color=PURPLE_B),
+            MathTex(r"1 - 2(1) = -1", font_size=28, color=PURPLE_B),
+            MathTex(r"11 - 2(6) = -1", font_size=28, color=PURPLE_B),
         ).arrange(DOWN, buff=0.15, aligned_edge=LEFT).next_to(step1_label, DOWN, buff=0.3)
         self.play(FadeIn(arith1), run_time=1.2)
 
@@ -205,7 +205,7 @@ class Scene4_WorkedExample(Scene):
         t_start = self.time
         target_t = t_start + segs["worked_backsub_y"]
 
-        step_y = MathTex(r"y - z = -1 \implies y - 3 = -1 \implies y = 2", font_size=34, color=GREEN_C)
+        step_y = MathTex(r"y - z = -1 \implies y - 3 = -1 \implies y = 2", font_size=34, color=PURPLE_B)
         step_y.next_to(step_z, DOWN, buff=0.4, aligned_edge=LEFT)
         self.play(Write(step_y), run_time=1.2)
 

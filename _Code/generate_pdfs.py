@@ -20,7 +20,7 @@ PRIMARY_COLOR = colors.HexColor("#1A365D")  # Deep Blue
 SECONDARY_COLOR = colors.HexColor("#2B6CB0")  # Blue Accent
 DARK_TEXT = colors.HexColor("#2D3748")  # Charcoal
 LIGHT_BG = colors.HexColor("#F7FAFC")
-ACCENT_GREEN = colors.HexColor("#2E8540")
+ACCENT_PURPLE = colors.HexColor("#7B2CBF")  # Purple accent
 ACCENT_ORANGE = colors.HexColor("#C05621")
 BORDER_COLOR = colors.HexColor("#E2E8F0")
 
@@ -182,7 +182,7 @@ def generate_storyboard():
         [
             Paragraph("<b>Scene 1</b><br/>The Hook<br/>(~28-30s)", styles['body']),
             Paragraph("Motivate the necessity of an algorithmic approach over trial & substitution.", styles['body']),
-            Paragraph("Three equations in Row 1 Blue, Row 2 Green, Row 3 Orange. Red cross over failed trial.", styles['body']),
+            Paragraph("Three equations in Row 1 Blue, Row 2 Purple, Row 3 Orange. Red cross over failed trial.", styles['body']),
             Paragraph("Demonstrates how trial and error or random substitution collapses into algebraic chaos.", styles['body']),
             Paragraph("Trial: (1,1,1) ⇒ 3 ≠ 6.<br/>Systematic algorithm introduction.", styles['body']),
         ],
@@ -196,7 +196,7 @@ def generate_storyboard():
         [
             Paragraph("<b>Scene 3</b><br/>Visual Intuition<br/>(~50s)", styles['body']),
             Paragraph("Deliver 3D geometric interpretation and prove invariance of the solution set.", styles['body']),
-            Paragraph("Three 3D intersecting planes (Blue, Green, Orange) rotated dynamically. Yellow sphere at intersection.", styles['body']),
+            Paragraph("Three 3D intersecting planes (Blue, Purple, Orange) rotated dynamically. Yellow sphere at intersection.", styles['body']),
             Paragraph("Explains that each row operation transforms a plane into another plane through the identical intersection.", styles['body']),
             Paragraph("Planes meeting at unique point (1,2,3). Geometry of row replacement.", styles['body']),
         ],
@@ -210,7 +210,7 @@ def generate_storyboard():
         [
             Paragraph("<b>Scene 5</b><br/>Interpretation<br/>(~40-45s)", styles['body']),
             Paragraph("Rigorous check in original equations; analyze singular & degenerate cases.", styles['body']),
-            Paragraph("Equations verified with green checkmarks. Augmented matrices showing contradiction [0 0 0 | 5] & free variable [0 0 0 | 0].", styles['body']),
+            Paragraph("Equations verified with yellow checkmarks. Augmented matrices showing contradiction [0 0 0 | 5] & free variable [0 0 0 | 0].", styles['body']),
             Paragraph("Verifies solution against original system. Explains no-solution (parallel/inconsistent) and infinite solutions.", styles['body']),
             Paragraph("1+2+3=6 ✓<br/>2+6+3=11 ✓<br/>1+4+9=14 ✓<br/>Contradiction: 0=5<br/>Dependent: 0=0", styles['body']),
         ],
@@ -322,7 +322,7 @@ def generate_code_walkthrough():
         ),
         (
             "4. scene1_hook.py — Conceptual Hook (Scene 1)",
-            "Animates the three equations color-coded by row (Blue, Green, Orange). Shows a trial guess (x=1, y=1, z=1) failing "
+            "Animates the three equations color-coded by row (Blue, Purple, Orange). Shows a trial guess (x=1, y=1, z=1) failing "
             "with a red cross (1+1+1=3 ≠ 6), illustrates the hazard of messy substitution, and dramatically introduces "
             "'Gaussian Elimination' as the systematic method that always works."
         ),
@@ -348,7 +348,7 @@ def generate_code_walkthrough():
         ),
         (
             "8. scene5_interpretation.py — Verification & Degenerate Cases (Scene 5)",
-            "Plugs (1, 2, 3) back into Equations 1, 2, and 3 with dynamic green checkmarks. Connects this back to the geometric intersection. "
+            "Plugs (1, 2, 3) back into Equations 1, 2, and 3 with dynamic yellow checkmarks. Connects this back to the geometric intersection. "
             "Then introduces the two fundamental alternative outcomes: inconsistent systems exhibiting a contradictory row [0 0 0 | 5] "
             "(parallel or non-intersecting planes), and dependent systems exhibiting a row of zeros [0 0 0 | 0] (infinite solutions)."
         ),
@@ -422,9 +422,9 @@ def generate_viva_prep():
             "leading to a parametric line or plane of solutions."
         ),
         (
-            "Q7: Why did you choose Row 1 Blue, Row 2 Green, and Row 3 Orange in your animation?",
+            "Q7: Why did you choose Row 1 Blue, Row 2 Purple, and Row 3 Orange in your animation?",
             "Consistent color mapping reduces cognitive load. By coloring each row's algebraic equation, its row in the augmented matrix, and its corresponding "
-            "plane in the 3D scene identically (Row 1 Blue, Row 2 Green, Row 3 Orange), the viewer instantly maps algebraic transformations to geometric entities. "
+            "plane in the 3D scene identically (Row 1 Blue, Row 2 Purple, Row 3 Orange), the viewer instantly maps algebraic transformations to geometric entities. "
             "Yellow is reserved exclusively for focal highlights: pivots, solution boxes, and intersection points."
         ),
         (

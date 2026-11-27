@@ -7,7 +7,7 @@ from manim import *
 import json, os
 
 ROW1_COLOR = BLUE_C
-ROW2_COLOR = GREEN_C
+ROW2_COLOR = PURPLE_B
 ROW3_COLOR = ORANGE
 
 class Scene5_Interpretation(Scene):
@@ -42,7 +42,7 @@ class Scene5_Interpretation(Scene):
         target_t = t_start + segs["verify_eq1"]
 
         v1 = MathTex(r"1 + 2 + 3 = 6", font_size=36, color=ROW1_COLOR)
-        c1 = Text("✓", font_size=38, color=GREEN)
+        c1 = Text("✓", font_size=38, color=YELLOW)
         g1 = VGroup(v1, c1).arrange(RIGHT, buff=0.3).next_to(sol_text, DOWN, buff=0.4)
         self.play(Write(v1), FadeIn(c1, scale=1.3), run_time=0.8)
 
@@ -57,7 +57,7 @@ class Scene5_Interpretation(Scene):
         target_t = t_start + segs["verify_eq2"]
 
         v2 = MathTex(r"2(1) + 3(2) + 3 = 2 + 6 + 3 = 11", font_size=36, color=ROW2_COLOR)
-        c2 = Text("✓", font_size=38, color=GREEN)
+        c2 = Text("✓", font_size=38, color=YELLOW)
         g2 = VGroup(v2, c2).arrange(RIGHT, buff=0.3).next_to(g1, DOWN, buff=0.3)
         self.play(Write(v2), FadeIn(c2, scale=1.3), run_time=1.2)
 
@@ -72,7 +72,7 @@ class Scene5_Interpretation(Scene):
         target_t = t_start + segs["verify_eq3"]
 
         v3 = MathTex(r"1 + 2(2) + 3(3) = 1 + 4 + 9 = 14", font_size=36, color=ROW3_COLOR)
-        c3 = Text("✓", font_size=38, color=GREEN)
+        c3 = Text("✓", font_size=38, color=YELLOW)
         g3 = VGroup(v3, c3).arrange(RIGHT, buff=0.3).next_to(g2, DOWN, buff=0.3)
         self.play(Write(v3), FadeIn(c3, scale=1.3), run_time=1.2)
 

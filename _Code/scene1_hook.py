@@ -22,7 +22,7 @@ class Scene1_Hook(Scene):
 
         header = Text("Three equations, three unknowns...", font_size=38, color=WHITE).to_edge(UP, buff=0.6)
         eq1 = MathTex(r"x + y + z = 6", color=BLUE_C, font_size=42)
-        eq2 = MathTex(r"2x + 3y + z = 11", color=GREEN_C, font_size=42)
+        eq2 = MathTex(r"2x + 3y + z = 11", color=PURPLE_B, font_size=42)
         eq3 = MathTex(r"x + 2y + 3z = 14", color=ORANGE, font_size=42)
         eqs = VGroup(eq1, eq2, eq3).arrange(DOWN, buff=0.35).shift(UP * 0.5)
 

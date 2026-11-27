@@ -18,14 +18,14 @@
 
 | Parameter | Specification | Achieved Metric | Status |
 | :--- | :--- | :--- | :--- |
-| **Resolution** | 1920×1080 (Full HD) | 1920×1080 | ✅ Compliant |
-| **Aspect Ratio** | 16:9 widescreen | 16:9 | ✅ Compliant |
-| **Frame Rate** | 30 fps | 30.00 fps | ✅ Compliant |
-| **Video Codec** | H.264 (AVC) | `h264` (Main / High profile, yuv420p) | ✅ Compliant |
-| **Audio Codec** | AAC (stereo, 192 kbps) | `aac`, 44.1 kHz, 192 kbps | ✅ Compliant |
-| **Target Duration** | 4:45 – 5:30 (< 7:00 strict max) | **5:16** (316.1 seconds) | ✅ Compliant |
-| **File Size** | < 100 MB (GitHub direct push safe) | **15.46 MB** | ✅ Compliant |
-| **Visual Palette** | Row 1 Blue, Row 2 Green, Row 3 Orange, Pivots Yellow | Consistent throughout all 2D/3D scenes | ✅ Compliant |
+| **Resolution** | 1920×1080 (Full HD) | 1920×1080 | [PASS] Compliant |
+| **Aspect Ratio** | 16:9 widescreen | 16:9 | [PASS] Compliant |
+| **Frame Rate** | 30 fps | 30.00 fps | [PASS] Compliant |
+| **Video Codec** | H.264 (AVC) | `h264` (Main / High profile, yuv420p) | [PASS] Compliant |
+| **Audio Codec** | AAC (stereo, 192 kbps) | `aac`, 44.1 kHz, 192 kbps | [PASS] Compliant |
+| **Target Duration** | 4:45 – 5:30 (< 7:00 strict max) | **5:16** (316.1 seconds) | [PASS] Compliant |
+| **File Size** | < 100 MB (GitHub direct push safe) | **15.59 MB** | [PASS] Compliant |
+| **Visual Palette** | Row 1 Blue, Row 2 Purple, Row 3 Orange, Pivots Yellow | Consistent throughout all 2D/3D scenes | [PASS] Compliant |
 
 ---
 
@@ -73,9 +73,9 @@ $$\left[\begin{array}{ccc|c}
 $$\mathbf{(x, y, z) = (1, 2, 3)}$$
 
 ### Substitution Check (shown on screen in Scene 5):
-- **Equation 1:** $1 + 2 + 3 = 6$ ✅
-- **Equation 2:** $2(1) + 3(2) + 3 = 2 + 6 + 3 = 11$ ✅
-- **Equation 3:** $1 + 2(2) + 3(3) = 1 + 4 + 9 = 14$ ✅
+- **Equation 1:** $1 + 2 + 3 = 6$ [Verified]
+- **Equation 2:** $2(1) + 3(2) + 3 = 2 + 6 + 3 = 11$ [Verified]
+- **Equation 3:** $1 + 2(2) + 3(3) = 1 + 4 + 9 = 14$ [Verified]
 
 ---
 

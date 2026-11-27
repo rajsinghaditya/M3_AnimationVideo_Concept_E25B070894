@@ -60,7 +60,7 @@ class Scene2_Concepts(Scene):
             font_size=36
         ).shift(LEFT * 3 + UP * 0.4)
         sys_eq[0].set_color(BLUE_C)
-        sys_eq[1].set_color(GREEN_C)
+        sys_eq[1].set_color(PURPLE_B)
         sys_eq[2].set_color(ORANGE)
 
         self.play(Write(sys_eq), run_time=1.2)
@@ -70,13 +70,13 @@ class Scene2_Concepts(Scene):
         ax_eq.next_to(arrow, RIGHT, buff=0.5)
         ax_eq[0].set_color(YELLOW)
         ax_eq[1].set_color(WHITE)
-        ax_eq[3].set_color(TEAL_C)
+        ax_eq[3].set_color(BLUE_C)
 
         self.play(Write(arrow), Write(ax_eq), run_time=0.8)
 
         a_label = Text("coefficient\nmatrix", font_size=20, color=YELLOW).next_to(ax_eq[0], DOWN, buff=0.3)
         x_label = Text("unknowns", font_size=20, color=WHITE).next_to(ax_eq[1], DOWN, buff=0.3)
-        b_label = Text("constants", font_size=20, color=TEAL_C).next_to(ax_eq[3], DOWN, buff=0.3)
+        b_label = Text("constants", font_size=20, color=BLUE_C).next_to(ax_eq[3], DOWN, buff=0.3)
         self.play(FadeIn(a_label), FadeIn(x_label), FadeIn(b_label), run_time=0.8)
 
         fade_dur = 0.4

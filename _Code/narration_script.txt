@@ -41,7 +41,7 @@ SCENE 3 — Visual Intuition (~50 seconds)
 ------------------------------------------
 Now let's build some geometric intuition.
 Each linear equation in three variables represents a plane in three-dimensional space.
-Here we see three coloured planes — blue, green, and orange — corresponding to our three equations.
+Here we see three coloured planes — blue, purple, and orange — corresponding to our three equations.
 The solution to the system is the single point where all three planes intersect.
 
 Notice that point. It's at x equals 1, y equals 2, z equals 3.
