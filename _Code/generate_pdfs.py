@@ -309,7 +309,7 @@ def generate_code_walkthrough():
         ),
         (
             "2. generate_tts.py — Asynchronous Neural Voice-Over Synthesizer",
-            "Leverages edge-tts with the Microsoft Neural Speech API (voice: 'en-GB-RyanNeural') to generate natural, crystal-clear "
+            "Leverages F5-TTS zero-shot neural voice cloning to generate natural, crystal-clear narration matching student Aditya Raj Singh's exact voice sample. "
             "narration. The script defines precise per-scene speech scripts calibrated to match target pacing. "
             "Crucially, it executes asynchronously, writes MP3 files for scenes 0 through 6, and measures exact durations with ffprobe, "
             "saving a durations.json file that drives all Manim scene run times."
@@ -429,7 +429,7 @@ def generate_viva_prep():
         ),
         (
             "Q8: How did you handle synchronization between the spoken narration and visual animations?",
-            "I used an 'audio-first' synthesis architecture. The voice-over audio was generated first using edge-tts, and its precise duration was extracted "
+            "I used an 'audio-first' synthesis architecture. The voice-over audio was generated first using F5-TTS neural voice cloning from student Aditya Raj Singh's voice sample, and its precise duration was extracted "
             "using ffprobe down to the millisecond into durations.json. Each Manim scene reads this file and computes dynamic wait intervals (self.wait) so that "
             "on-screen text transitions and matrix highlights occur in perfect synchrony with the voice."
         ),
@@ -475,7 +475,7 @@ def generate_viva_prep():
             "Q15: What tools and technologies comprise the production pipeline of this project?",
             "• Manim Community Edition (v0.22.1) for programmatic 2D/3D mathematical animations\n"
             "• Python 3 with NumPy for numerical verification\n"
-            "• edge-tts (Microsoft Neural Voice 'en-GB-RyanNeural') for natural narration\n"
+            "• F5-TTS Neural Voice Cloning (matching student Aditya Raj Singh's voice sample) for authentic narration\n"
             "• FFmpeg for H.264/AAC video rendering, audio-video multiplexing, and format compliance\n"
             "• ReportLab for generating professional assessment PDF documentation."
         ),

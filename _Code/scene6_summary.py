@@ -93,7 +93,7 @@ class Scene6_Summary(Scene):
         ai_header = Text("AI Disclosure", font_size=26, color=YELLOW, weight=BOLD)
         ai1 = Text("Script, animation code, and narration were produced", font_size=19, color=GREY_B)
         ai2 = Text("with the help of Claude (Anthropic).", font_size=19, color=GREY_B)
-        ai3 = Text("Voice: edge-tts (en-GB-RyanNeural).", font_size=19, color=GREY_B)
+        ai3 = Text("Voice: F5-TTS Neural Voice Clone (Aditya Raj Singh).", font_size=19, color=GREY_B)
         ai4 = Text("All mathematics was checked by the student.", font_size=19, color=GREY_B)
         ai_group = VGroup(ai_header, ai1, ai2, ai3, ai4).arrange(DOWN, buff=0.1, aligned_edge=LEFT)
         ai_group.next_to(refs, DOWN, buff=0.35)

@@ -23,8 +23,8 @@
 | **Frame Rate** | 30 fps | 30.00 fps | ✅ Compliant |
 | **Video Codec** | H.264 (AVC) | `h264` (Main / High profile, yuv420p) | ✅ Compliant |
 | **Audio Codec** | AAC (stereo, 192 kbps) | `aac`, 44.1 kHz, 192 kbps | ✅ Compliant |
-| **Target Duration** | 4:45 – 5:30 (< 7:00 strict max) | **5:26** (326.2 seconds) | ✅ Compliant |
-| **File Size** | < 100 MB (GitHub direct push safe) | **14.93 MB** | ✅ Compliant |
+| **Target Duration** | 4:45 – 5:30 (< 7:00 strict max) | **5:16** (316.1 seconds) | ✅ Compliant |
+| **File Size** | < 100 MB (GitHub direct push safe) | **15.46 MB** | ✅ Compliant |
 | **Visual Palette** | Row 1 Blue, Row 2 Green, Row 3 Orange, Pivots Yellow | Consistent throughout all 2D/3D scenes | ✅ Compliant |
 
 ---
@@ -122,7 +122,7 @@ $$\mathbf{(x, y, z) = (1, 2, 3)}$$
 
 - **Animation Engine:** [Manim Community Edition](https://www.manim.community/) (v0.22.1)
 - **Math Typesetting:** LaTeX (TeXLive / BasicTeX engine) with `MathTex`
-- **Voice Synthesis:** [edge-tts](https://github.com/rany2/edge-tts) (Microsoft Neural Voice: `en-GB-RyanNeural`)
+- **Voice Synthesis:** F5-TTS Neural Voice Clone (Zero-shot diffusion voice cloning conditioned on student Aditya Raj Singh's voice sample)
 - **Numerical Verification:** NumPy (`verify_math.py` with hard assertions and `np.linalg.solve`)
 - **Video & Audio Multiplexing:** FFmpeg (libx264, AAC, faststart container)
 - **PDF Publishing:** ReportLab 5.1
@@ -149,7 +149,7 @@ $$\mathbf{(x, y, z) = (1, 2, 3)}$$
 
 4. **Generate narration audio:**
    ```bash
-   python3 _Code/generate_tts.py
+   python3 _Code/clone_voice_and_render.py
    ```
 
 5. **Generate documentation PDFs:**
@@ -176,4 +176,4 @@ The compiled video will be saved directly to `_Video.mp4`.
 
 ## 🤖 AI Transparency Disclosure
 
-*Script, animation code, documentation, and narration were produced with the assistance of Claude (Anthropic). Voice: edge-tts (`en-GB-RyanNeural`). All mathematical proofs, numerical steps, and theoretical consistency were thoroughly reviewed and verified by the student.*
+*Script, animation code, documentation, and voice cloning pipeline were produced with AI assistance. Voice: F5-TTS Neural Voice Clone (trained on Aditya Raj Singh's voice sample). All mathematical proofs, numerical steps, and theoretical consistency were thoroughly reviewed and verified by the student.*
